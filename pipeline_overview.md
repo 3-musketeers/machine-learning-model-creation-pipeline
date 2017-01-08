@@ -12,6 +12,9 @@
    1. Understanding the problem (in: specific kaggle competition problem/data, out: common sensical/basic understanding of problem, or what you are being asked to predct)
    2. Understanding the data (in: specific kaggle competition problem/data, out: common sensical/basic understanding of data variables, or what data you are given)
    3. Understanding the evaluation metric (in: specific kaggle competition evaluation metric, out: common sensical/basic understanding of evaluation metric)
+2. Build simple model
+3. Build Strong Cross Validation 
+
 
 ## Resources:
 Resources used to compile this pipeline...
@@ -19,4 +22,4 @@ Resources used to compile this pipeline...
 1. Kyle's prior knowledge and experience (not a lot)
 2. Abhishek Thakur's Tutorial to "Approach Almost Any Machine Learning Problem" (found [here](http://blog.kaggle.com/2016/07/21/approaching-almost-any-machine-learning-problem-abhishek-thakur/))
 3. google search: machine learning pipeline, approaching any machine learning problem, automating machine learning model creation
-4. kaggle top people interviews (specifically: how they approach a competition)
+4. kaggle top people interviews (specifically: how they approach a competition, found [here](http://blog.kaggle.com/tag/profiling-top-kagglers/))
