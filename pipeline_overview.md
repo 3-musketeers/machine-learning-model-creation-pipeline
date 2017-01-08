@@ -13,7 +13,7 @@
    2. Understanding the data (in: specific kaggle competition problem/data, out: common sensical/basic understanding of data variables, or what data you are given)
    3. Understanding the evaluation metric (in: specific kaggle competition evaluation metric, out: common sensical/basic understanding of evaluation metric)
 2. Build simple model
-3. Build Strong Cross Validation 
+3. Build consistent cross validation 
 
 
 ## Resources:
