@@ -24,3 +24,9 @@ Resources used to compile this pipeline...
 3. google search: machine learning pipeline, approaching any machine learning problem, automating machine learning model creation
 4. kaggle top people interviews (specifically: how they approach a competition, found [here](http://blog.kaggle.com/tag/profiling-top-kagglers/))
    1. leustagos' interview (found [here](http://blog.kaggle.com/2016/02/22/profiling-top-kagglers-leustagos-current-7-highest-1/))
+   2. luca massaron's interview (found [here](http://blog.kaggle.com/2016/07/14/kaggle-master-data-scientist-author-an-interview-with-luca-massaron/))
+   3. Gilberto Titericz's interview (found [here](http://blog.kaggle.com/2015/11/09/profiling-top-kagglers-gilberto-titericz-new-1-in-the-world/))
+   4. Kazanova's interview (found [here](http://blog.kaggle.com/2016/02/10/profiling-top-kagglers-kazanova-new-1-in-the-world/))
+5. 2 useful articles 
+   1. Learning from the best (found [here](http://blog.kaggle.com/2014/08/01/learning-from-the-best/))
+   2. What do top Kaggle competitors focus on? (found [here](http://blog.kaggle.com/2012/07/18/what-do-top-kaggle-competitors-focus-on/))
