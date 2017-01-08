@@ -5,3 +5,9 @@
 **Pipeline input**: a problem, dataset
 
 **Pipeline output**: the best machine learning model (that solves problem)
+
+
+## Pipeline Modules: 
+1. Understanding the context
+   1. Understanding the problem
+   2. Understanding the data
