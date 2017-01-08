@@ -23,3 +23,4 @@ Resources used to compile this pipeline...
 2. Abhishek Thakur's Tutorial to "Approach Almost Any Machine Learning Problem" (found [here](http://blog.kaggle.com/2016/07/21/approaching-almost-any-machine-learning-problem-abhishek-thakur/))
 3. google search: machine learning pipeline, approaching any machine learning problem, automating machine learning model creation
 4. kaggle top people interviews (specifically: how they approach a competition, found [here](http://blog.kaggle.com/tag/profiling-top-kagglers/))
+   1. leustagos' interview (found [here](http://blog.kaggle.com/2016/02/22/profiling-top-kagglers-leustagos-current-7-highest-1/))
