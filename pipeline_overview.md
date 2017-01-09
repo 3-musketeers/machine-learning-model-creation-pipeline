@@ -9,7 +9,7 @@
 **"Machine Learning Model Creation Pipeline"**: everything a person should do, if they are given a problem and pertinent data and they need to return the best model that solves the problem (basically how to approach any [Kaggle](https://www.kaggle.com/) competition).
 
 ## Pipeline Modules: 
-**Pipeline input**: a kaggle competition (or a problem, a dataset)
+**Pipeline input**: a kaggle competition (or: a problem and a dataset)
 
 1. Understanding the context 
    1. Understanding the problem 
@@ -20,7 +20,7 @@
 4. Look for similar approaches from past competitions
 5. Get all domain-specific knowledge
 6. Get to know the data
-7. Reason all possible useful models
+7. Create list of all possible useful models
 8. For all possible useful models:
    1. preprocess data
    2. feature engineer
@@ -29,7 +29,7 @@
    5. find final CV/LB score of model
 9. Ensembling
 
-**Pipeline output**: the best machine learning model (that solves problem)
+**Pipeline output**: the best machine learning model (that solves the problem)
 
 ## Resources:
 Resources used to compile this pipeline...
