@@ -8,10 +8,10 @@
 
 
 ## Pipeline Modules: 
-1. Understanding the context (in: specific kaggle competition information, out: common sensical/basic understanding of problem and data variables)
-   1. Understanding the problem (in: specific kaggle competition problem/data, out: common sensical/basic understanding of problem, or what you are being asked to predct)
-   2. Understanding the data (in: specific kaggle competition problem/data, out: common sensical/basic understanding of data variables, or what data you are given)
-   3. Understanding the evaluation metric (in: specific kaggle competition evaluation metric, out: common sensical/basic understanding of evaluation metric)
+1. Understanding the context 
+   1. Understanding the problem 
+   2. Understanding the data 
+   3. Understanding the evaluation metric 
 2. Build simple model
 3. Build consistent cross validation
 4. Look for similar approaches from past competitions
