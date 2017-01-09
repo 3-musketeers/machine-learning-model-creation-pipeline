@@ -20,8 +20,10 @@
 4. Look for similar approaches from past competitions
 5. Get all domain-specific knowledge
 6. Get to know the data
+   1. Data Analysis 
+   2. Data Visualization
 7. Create list of all possible useful models
-8. For all possible useful models:
+8. For each model, in "all possible useful models":
    1. preprocess data
    2. feature engineer
    3. feature selection
