@@ -1,13 +1,16 @@
 # Machine Learning Model Creation Pipeline Overview
+## Definitions: 
+**Machine Learning**: is a type of artificial intelligence (AI) that provides computers with the ability to learn without being explicitly programmed.
 
-**Definition of "Machine Learning Model Creation Pipeline"**: everything a person should do, if they are given a problem and pertinent data and they need to return the best model that solves the problem (basically how to approach any [Kaggle](https://www.kaggle.com/) competition).
+**Model**: the thing that is trained on data, and used later for a specific purpose (not a good definition)
 
-**Pipeline input**: a kaggle competition (or a problem, a dataset)
+**Pipeline**: a set of processes that allows a person to achieve a certain goal
 
-**Pipeline output**: the best machine learning model (that solves problem)
-
+**"Machine Learning Model Creation Pipeline"**: everything a person should do, if they are given a problem and pertinent data and they need to return the best model that solves the problem (basically how to approach any [Kaggle](https://www.kaggle.com/) competition).
 
 ## Pipeline Modules: 
+**Pipeline input**: a kaggle competition (or a problem, a dataset)
+
 1. Understanding the context 
    1. Understanding the problem 
    2. Understanding the data 
@@ -26,6 +29,7 @@
    5. find final CV/LB score of model
 9. Ensembling
 
+**Pipeline output**: the best machine learning model (that solves problem)
 
 ## Resources:
 Resources used to compile this pipeline...
