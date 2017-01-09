@@ -13,7 +13,18 @@
    2. Understanding the data (in: specific kaggle competition problem/data, out: common sensical/basic understanding of data variables, or what data you are given)
    3. Understanding the evaluation metric (in: specific kaggle competition evaluation metric, out: common sensical/basic understanding of evaluation metric)
 2. Build simple model
-3. Build consistent cross validation 
+3. Build consistent cross validation
+4. Look for similar approaches from past competitions
+5. Get all domain-specific knowledge
+6. Get to know the data
+7. Reason all possible useful models
+8. For all possible useful models:
+   1. preprocess data
+   2. feature engineer
+   3. feature selection
+   4. optimize hyperparameters (on CV)
+   5. find final CV/LB score of model
+9. Ensembling
 
 
 ## Resources:
