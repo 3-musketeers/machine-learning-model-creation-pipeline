@@ -1,5 +1,5 @@
 # "Understand Context" Module
 
-**input**: specific kaggle competition problem/data
+**input**: specific kaggle competition information
 
-**output**: common sensical/basic understanding of problem, or what you are being asked to predict
+**output**: common sensical/basic understanding of problem, data variables, and evaluation metric
