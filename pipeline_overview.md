@@ -11,25 +11,25 @@
 ## Pipeline Modules: 
 **Pipeline input**: a kaggle competition (or: a problem and a dataset)
 
-1. Understanding the context 
+1. **Understanding the context** *(gain basic understanding of everything about the machine learning problem, including the problem itself, the data variables provided, and how to score how well a model is performing)*
    1. Understanding the problem 
    2. Understanding the data 
    3. Understanding the evaluation metric 
-2. Build simple model
-3. Build consistent cross validation
-4. Look for similar approaches from past competitions
-5. Get all domain-specific knowledge
-6. Get to know the data
-   1. Data Analysis 
+2. **Build simple model** *(build a easy to train model with simple features)*
+3. **Build consistent cross-validation function** *(build a cross-validation function that scores the simple model, and demonstrates a score consistent with the leaderboard score the simple model)*
+4. **Look for similar approaches from past competitions** *(look at prior kaggle competitions for insights)*
+5. **Get all domain-specific knowledge** *(gather information specific to the domain of the problem)*
+6. **Get to know the data** *(understand relationships between different data variables for potential new features)*
+   1. Exploratory Data Analysis 
    2. Data Visualization
-7. Create list of all possible useful models
-8. For each model, in "all possible useful models":
-   1. preprocess data
-   2. feature engineer
-   3. feature selection
-   4. optimize hyperparameters (on CV)
-   5. find final CV/LB score of model
-9. Ensembling
+7. **Create list of all possible useful models** *(create a list of possible models that could work well with the given context)*
+8. **For each model, in "all possible useful models"**: *(repeat steps below for every single model in the list)*
+   1. **preprocess data** *(scale values, treat missing values)*
+   2. **feature engineer** *(engineer new features to train the model, based off of insights)*
+   3. **feature selection** *(select best festures)*
+   4. **optimize hyperparameters (on CV)** *(optimize the parameters of the model)*
+   5. **find final CV/LB score of model** *(find and compare final scores of model)*
+9. **Ensembling** *(take the best models trained, and combine them to create an ensemble of models)*
 
 **Pipeline output**: the best machine learning model (that solves the problem)
 
