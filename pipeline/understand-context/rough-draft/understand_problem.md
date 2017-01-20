@@ -1,5 +1,6 @@
-# "Understand Problem" Module
+# Understand Problem
+*final goal: get common sensical/basic understanding of problem, or what you are being asked to predict*
 
-**input**: specific kaggle competition problem/data
+Read the "Description" page of the kaggle competition, and search for the sentence or paragraph that describes what competitors are asked to do. 
 
-**output**: common sensical/basic understanding of problem, or what you are being asked to predict
+Go to the "Data" page of the kaggle competition, read through to find a more detailed description of the problem. 
