@@ -2,6 +2,7 @@
 *final goal: get common sensical/basic understanding of problem, or what you are being asked to predict*
 
 ## "Understand Problem" Notes
+*to be done in a markdown file*
 
 1. Read the "Description" page of the kaggle competition
 2. Search for the sentence or paragraph that describes what competitors are asked to do
