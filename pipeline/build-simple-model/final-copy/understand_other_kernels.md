@@ -1,5 +1,5 @@
 # Understand Other Kernels
-*final goal: have an even better understanding of data (EDA, preprocessing steps)*
+*final goal: have a good understanding of how to create models for the problem*
 
 ## "Understand Other Kernels" Notes
 *make a folder to contain all IPython Notebooks, and notes*
