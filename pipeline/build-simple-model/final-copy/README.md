@@ -5,7 +5,7 @@
 **output**: a simple model that creates an actual submission to the competition
 
 ## Process:
-1. understand the data at a deeper level (EDA, preprocessing steps from others)
+1. ([understand_data.md](https://github.com/the-machine-learners/machine-learning-model-creation-pipeline/blob/master/pipeline/build-simple-model/final-copy/understand_data.md)) understand the data at a deeper level (EDA, preprocessing steps from others)
 2. understand other people's basic models
 3. Sketch a simple outline of very basic features
 4. Extract the basic features from dataset, and build a basic feature matrix
