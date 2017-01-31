@@ -13,3 +13,13 @@ Kfold CV seems to be the best/most popular and this is how you do it:
 Kfold cross validation is used to select the best model, as well as select the best hyperparameters for that model as well, then once you have the best hyperparameters/model you train it on all of the training set and make predictions using that final model that was trained on the entire training set
 
 The question is, could you completely change the validation process and exchange it for one from your own creative creation?
+
+
+
+```python
+def get_cross_validation(train_x, train_y, train_model, make_preds, format_function):
+
+def train_model(train_x, train_y)
+    return model
+
+```
