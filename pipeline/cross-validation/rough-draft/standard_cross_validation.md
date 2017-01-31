@@ -23,3 +23,35 @@ def train_model(train_x, train_y)
     return model
 
 ```
+
+from sklearn.model_selection import StratifiedKFold
+def train_xgboost():
+    df = pd.read_csv('../input/stage1_labels.csv')
+
+    x = get_trn()
+    y = df['cancer'].as_matrix()
+
+    clfs = []
+    for seed in range(15):
+
+        skf = StratifiedKFold(n_splits=10, random_state=14+seed, shuffle=True)
+    
+        
+        
+        for train_index, test_index in skf.split(x, y):
+            trn_x, val_x = x[train_index,:], x[test_index,:]
+            trn_y, val_y = y[train_index], y[test_index]
+    
+            clf = xgb.XGBRegressor(max_depth=11,
+                                   n_estimators=1500,
+                                   min_child_weight=9,
+                                   learning_rate=0.03,
+                                   nthread=8,
+                                   subsample=0.80,
+                                   colsample_bytree=0.80,
+                                   seed=88+seed)
+    
+            clf.fit(trn_x, trn_y, eval_set=[(val_x, val_y)], verbose=True, eval_metric='logloss', early_stopping_rounds=50)
+            clfs.append(clf)
+
+    return clfs
