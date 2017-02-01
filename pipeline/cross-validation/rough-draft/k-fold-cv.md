@@ -21,10 +21,15 @@ It allows all of the training data to be used to train the model (unlike the hol
 *Output: k scores based on each partitioning of the dataset*
 
 ### Details
+* In the end to train the final model, train it on all of the training data (ignore the k models that were trained previously as they are only used for evaluation purposes)
+* To select hyperparameters and the best models, designate a model and its hyperparameters, run k-fold, then designate different hyperparameters or a different model, run k-fold, and compare scores to find which model/set of hyperparameters is best (based on score)
 * More folds is always better, however the number of folds should never exceed 10 (as 90% of the data is being used to train the model, which is already extremely close to 100%)
 * More runs of K-fold validation will give a more accurate understanding of how well the model is generalizing (as the data is being partitioned in different intervals)
+* Stratified cross validation is used for imbalanced datasets (typically classification problems where there are a differing number of training examples for one class vs the others)
+* Standard deviation of the k, k-fold scores can be more important than their mean (for understanding generalization purposes)
 * How to choose the value of K, based on time limitations and accuracy of measurement:
   * choose K that doesn't take ridiculous amounts of time, yet is as high as possible
+  * choose K that mimics the ratio of training data vs test data, which is the public leaderboard data (to get an accurate understanding of how well the model will do on the final test set)
 * Should you always partition the k-folds the same way when evaluating models? Or should you partition the K-folds randomly every time you evaluate a different model?
   * maybe you should partition it the same way a single time, then partition it randomly another time, and compare scores for the model from the two run throughs of k-fold
 
