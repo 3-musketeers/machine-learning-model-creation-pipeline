@@ -11,7 +11,12 @@ It allows all of the training data to be used to train the model (unlike the hol
 ## K-Fold Method Implementation
 *Input: entire training set with labels, how to train the model*
 
-1. 
+1. Designate the number of folds to be performed (k number of folds)
+2. Divide the dataset into k different sets of training examples (k1, k2, ..., kn)
+3. For the number of folds (k):
+   1. Train the model on k-1 of the sets of training examples (train on a different k-1 sets every time)
+   2. Use model to make predictions on the leftover set of training examples
+   3. Compare predictions to actual labels, and calculate score
 
 *Output: k scores based on each partitioning of the dataset*
 
