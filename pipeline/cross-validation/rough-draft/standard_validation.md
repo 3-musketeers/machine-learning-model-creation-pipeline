@@ -62,9 +62,14 @@ support for k-fold cross validation:
 http://www.slideshare.net/markpeng/general-tips-for-participating-kaggle-competitions
 http://www.cs.utah.edu/~piyush/teaching/22-9-slides.pdf
 
+If your local validation is set up well and is consistent with the leaderboard (which you need to test by making one or two submissions), there’s really no need to make many submissions. 
 
-
-
+k-fold cross validation is the most common approach (stratified k-fold is necessary so that the validation set contains the sample percentage of each target class as the original complete dataset) 
+  * AUC can give you more information
+  * more folds the better (10 max), and the more times you run it on different samples of the dataset the better
+  * the question is:
+    * how to choose the best k that also doesn't take too much time
+    * and whether or not you randomly partition the dataset every single time you run CV, or you use the same partitions every time you do CV (for consistency), or maybe you have one set partitions that you use every time and you also run a random version as well, can this be proven empirically?
 
 ## Data scientist significance
 you are basically a scientist, you just define new types of methods and approaches to machine learning then all you have to do is just test the methods and see if it produces a better model, and if it does produce better models overall then that means you can justify your method is better (and you redefine how people make models!!). Thus it is all about the scientific method when you create a hypothesis, devise a way to test and support hypothesis, perform the test and show your results
@@ -83,6 +88,9 @@ https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=wha
 https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#safe=strict&q=bootstrap+validation+machine+learning
 * good slides to learn about anything in machine learning ([here](http://www.cs.utah.edu/~piyush/teaching/cs5350.html))
 http://www.slideshare.net/markpeng/general-tips-for-participating-kaggle-competitions
+https://yanirseroussi.com/2014/08/24/how-to-almost-win-kaggle-competitions/
+http://mlwave.com/reflecting-back-on-one-year-of-kaggle-contests/
+
 ## Improving Cross Validation over Time
 http://blog.kaggle.com/2015/05/07/profiling-top-kagglers-kazanovacurrently-2-in-the-world/
 
