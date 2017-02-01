@@ -27,9 +27,18 @@ The goal of machine learning is to make perfect predictions on unseen data, and 
   * thus there could be an algorithm that is built that is not designed to just predict the labels of unseen data (outputs), but actually predict the possible cases of the future as well as the labels of those cases
   * or another way of grading how well an algorithm is performing is to see how accurate its generations of new examples are, as well as how accurate its labels for those examples are (how are you going to do this?)
 
+## Define what is the mainstream method of machine learning, in terms of validation?
+* to define a model structure, train it on training data (this is the learning part), then to judge how well a model is performing in terms of prediction ability you give it a definite score based on how well it does on unseen data (amount predicted correctly vs incorrectly)
+* the end goal is always to create a model that can generalize and make perfect predictions for any unseen data
+* instead of using a test set score and trying to improve that score which may lead to overfitting, there is a validation process
+  * the validation process allows you to improve the score off a validation set, and the validation score matching with the test score indicates the model is not overfit to the training data
+  * when both validation score and test score are very good and very correlated that means you have a model that is not overfit as well as very good (thus it generalizes very well to new examples)
+* so what is the best way to perform this validation according to most sources?
+
+you are basically a scientist, you just define new types of methods and approaches to machine learning then all you have to do is just test the methods and see if it produces a better model, and if it does produce better models overall then that means you can justify your method is better (and you redefine how people make models!!). Thus it is all about the scientific method when you create a hypothesis, devise a way to test and support hypothesis, perform the test and show your results
 
 
-
+## Resources
 http://stats.stackexchange.com/questions/52274/how-to-choose-a-predictive-model-after-k-fold-cross-validation 
 https://www.facebook.com/kaggle/posts/10153369056763464
 https://www.analyticsvidhya.com/blog/2016/02/7-important-model-evaluation-error-metrics/
@@ -38,13 +47,6 @@ http://brettromero.com/wordpress/data-science-kaggle-walkthrough-creating-model/
 http://stats.stackexchange.com/questions/71184/cross-validation-or-bootstrapping-to-evaluate-classification-performance 
 https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=what+to+do+after+k+fold+cross+validation 
 https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#safe=strict&q=bootstrap+validation+machine+learning
-
-
-
-
-
-
-
 
 ## Improving Cross Validation over Time
 http://blog.kaggle.com/2015/05/07/profiling-top-kagglers-kazanovacurrently-2-in-the-world/
