@@ -34,12 +34,42 @@ The goal of machine learning is to make perfect predictions on unseen data, and 
 * instead of using a test set score and trying to improve that score which may lead to overfitting, there is a validation process
   * the validation process allows you to improve the score off a validation set, and the validation score matching with the test score indicates the model is not overfit to the training data
   * when both validation score and test score are very good and very correlated that means you have a model that is not overfit as well as very good (thus it generalizes very well to new examples)
+* does all of the above seem correct? confirm it is, then determine how validation fits in
 * so what is the best way to perform this validation according to most sources?
 * search up machine learning validation techniques, from the internet and from kaggle, and determine which technique is supported by the largest body of evidence
   * then take the technique, understand it deeply, and write a function that can implement it correctly
 
 
+* note cross validation process should resemble the leaderboard or test set as best as possible (because if it does represent the test set, then you have an accurate understanding of how good your model is, otherwise you have no clue how good your model is)
+  * "In regards to CV, I try to best resemble what I am being tested on." ([kazanova](http://blog.kaggle.com/2016/02/10/profiling-top-kagglers-kazanova-new-1-in-the-world/))
+
+Types of Validation:
+1. Holdout method: part of dataset is set aside to evaluate model performance ([here](https://en.wikipedia.org/wiki/Test_set#Validation_set))
+2. Cross validation: data is partitioned multiple times, and the model is trained using part of data while evaluated on another part, and the average error over all partitions is computed ([here](https://en.wikipedia.org/wiki/Cross-validation_(statistics))
+   1. Leave-one-out cross-validation
+   2. k-fold cross validation
+3. Boostrapping
+4. [Sensitivity and specificity](https://en.wikipedia.org/wiki/Sensitivity_and_specificity) (True Positive Rate: TPR and True Negative Rate: TNR, respectively), [False Positive Rate](https://en.wikipedia.org/wiki/False_positive_rate) (FPR) as well as the [False Negative Rate](https://en.wikipedia.org/wiki/False_positives_and_false_negatives#false_negative_rate) (FNR)
+5. [Receiver operating characteristic](https://en.wikipedia.org/wiki/Receiver_operating_characteristic) (ROC) along with the accompanying Area Under the ROC Curve (AUC)
+
+More about cross validation
+* https://www.kaggle.com/c/titanic/forums/t/3244/cross-validation-methods
+* for which k to choose, choose one that mimics the ratio of training vs testin in the validation process
+* standard deviation of cv score matters more than mean
+* stratified k-fold used for imbalanced dataset (classification problems)
+* look for high correlation between local CV and LB score, so when one increases and decreases so does the other (always trust local CV more though)
+support for k-fold cross validation:
+http://www.slideshare.net/markpeng/general-tips-for-participating-kaggle-competitions
+http://www.cs.utah.edu/~piyush/teaching/22-9-slides.pdf
+
+
+
+
+
+## Data scientist significance
 you are basically a scientist, you just define new types of methods and approaches to machine learning then all you have to do is just test the methods and see if it produces a better model, and if it does produce better models overall then that means you can justify your method is better (and you redefine how people make models!!). Thus it is all about the scientific method when you create a hypothesis, devise a way to test and support hypothesis, perform the test and show your results
+  * [here](http://blog.kaggle.com/2016/07/14/kaggle-master-data-scientist-author-an-interview-with-luca-massaron/) luca talks about how you need a scientific mindset to be a data scientist, and it would be very interesting if you could merge the two competing cultures to a single one that does train black boxes, but the black boxes can incorporate prior knowledge, and eventually explain their understanding of the problem or the world
+  * "accepting its strict empiricism based on data, and it means supporting work using only scientific tests (namely properly executed cross-validation) to prove the effectiveness of the chosen algorithmic solution."
 
 
 ## Resources
@@ -51,7 +81,8 @@ http://brettromero.com/wordpress/data-science-kaggle-walkthrough-creating-model/
 http://stats.stackexchange.com/questions/71184/cross-validation-or-bootstrapping-to-evaluate-classification-performance 
 https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=what+to+do+after+k+fold+cross+validation 
 https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#safe=strict&q=bootstrap+validation+machine+learning
-
+* good slides to learn about anything in machine learning ([here](http://www.cs.utah.edu/~piyush/teaching/cs5350.html))
+http://www.slideshare.net/markpeng/general-tips-for-participating-kaggle-competitions
 ## Improving Cross Validation over Time
 http://blog.kaggle.com/2015/05/07/profiling-top-kagglers-kazanovacurrently-2-in-the-world/
 
