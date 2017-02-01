@@ -7,3 +7,5 @@ We want models that are not limited by the programmer and are able to learn a wi
 
 Imagine a model that can not only test specific, but it can generate on its own complex processes such as the nodule analysis process which seems to be the most successful. Thus you need to define a process to generate processes. 
 
+informative scoring allows for the model to know where to improve, then it can build more elaborate models based on its poor scoring in a certain category, scoring is elaborately connected to building strong complex models
+
