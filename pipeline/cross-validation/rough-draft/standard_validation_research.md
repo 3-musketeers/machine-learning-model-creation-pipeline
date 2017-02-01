@@ -44,6 +44,7 @@ The goal of machine learning is to make perfect predictions on unseen data, and 
   * "In regards to CV, I try to best resemble what I am being tested on." ([kazanova](http://blog.kaggle.com/2016/02/10/profiling-top-kagglers-kazanova-new-1-in-the-world/))
 
 Types of Validation:
+
 1. Holdout method: part of dataset is set aside to evaluate model performance ([here](https://en.wikipedia.org/wiki/Test_set#Validation_set))
 2. Cross validation: data is partitioned multiple times, and the model is trained using part of data while evaluated on another part, and the average error over all partitions is computed ([here](https://en.wikipedia.org/wiki/Cross-validation_(statistics))
    1. Leave-one-out cross-validation
