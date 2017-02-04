@@ -35,4 +35,8 @@ It allows all of the training data to be used to train the model (unlike the hol
 
 
 ## Sample K-Fold Code
+*a sample function that can calculate k-fold scores for a given model*
+
 ## Sample Stratified K-Fold Code
+*a sample function that can calculate stratified k-fold scores for a given model*
+
